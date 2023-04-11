@@ -1,10 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
+
 
 public class WebTest {
 
@@ -41,7 +41,7 @@ public class WebTest {
         try {
 
             driver.get(url);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             String actualResult = driver.findElement(By.cssSelector("#main > h2")).getText();
 
